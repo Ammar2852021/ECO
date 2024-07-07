@@ -40,18 +40,23 @@ OK.addEventListener('click',function(){
 // 
 
 function showQuestion2() {
-    document.getElementById('question1').classList.add('hidden');
-    document.getElementById('question2').classList.remove('hidden');
+  document.getElementById('question1').classList.add('hidden');
+  document.getElementById('question2').classList.remove('hidden');
 }
 
 function showResult(answer) {
-    // Handle showing result based on answer
-    document.getElementById('question2').classList.add('hidden');
-    document.getElementById('result').style.display = 'block';
-    document.getElementById('con').style.display = 'none';
+  // إخفاء السؤال الثاني
+  document.getElementById('question2').classList.add('hidden');
+  document.getElementById('con').style.display = 'none';
+
+  // إظهار النتيجة بعد 3 ثواني
+  setTimeout(function() {
+      document.getElementById('result').style.display = 'block';
+      document.getElementById('lood').style.display = 'none'; // إخفاء العنصر الأول
+  }, 3000); // 3000 مللي ثانية = 3 ثواني
 }
 
-// Initially hide 'result' and show 'con'
+// إخفاء النتيجة وعرض 'con' عند بدء التحميل
 let result = document.getElementById('result');
 result.style.display = 'none';
 document.getElementById('con').style.display = 'block';
