@@ -856,6 +856,17 @@ justify-content: space-between;
     img.zoom-in {
         width: 90% !important;
     }
+    .coments {
+        padding: 5px;
+        background: white;
+        width: 55%;
+        margin: 5px 0;
+        border-radius: 30px;
+        font-size: small;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
 }
 
 
