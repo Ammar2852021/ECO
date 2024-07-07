@@ -827,3 +827,12 @@ i {
 .zoom-in:hover {
     transform: scale(1.1);
 }
+
+
+@media screen and (max-width:992px) {
+    .image-container img {
+        animation: pulse 0.5s ease-in-out infinite alternate;
+        margin-top: 3vh;
+        width: 85%;
+    }
+}
