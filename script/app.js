@@ -48,6 +48,7 @@ function showResult(answer) {
   // إخفاء السؤال الثاني
   document.getElementById('question2').classList.add('hidden');
   document.getElementById('con').style.display = 'none';
+  document.getElementById('lood').style.opacity = '1'; // إخفاء العنصر الأول
 
   // إظهار النتيجة بعد 3 ثواني
   setTimeout(function() {
