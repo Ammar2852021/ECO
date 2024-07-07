@@ -114,6 +114,7 @@ header {
 
 .text {
     padding: 10px;
+    font-weight: bold;
 }
 
 /* الكود الرئيسي */
@@ -829,10 +830,29 @@ i {
 }
 
 
+.coments{
+    padding: 5px;
+    background: white;
+    width: 25%;
+    margin: 5px 0;
+    border-radius: 30px;
+font-size: small;
+display: flex;
+align-items: center;
+justify-content: space-between;
+}
+
+
 @media screen and (max-width:992px) {
     .image-container img {
         animation: pulse 0.5s ease-in-out infinite alternate;
         margin-top: 3vh;
         width: 85%;
+    }
+    .width_ {
+        width: 90% !important;
+    }
+    img.zoom-in {
+        width: 90% !important;
     }
 }
