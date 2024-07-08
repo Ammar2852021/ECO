@@ -871,7 +871,7 @@ justify-content: space-between;
         font-size: x-large !important;
     }
     
-    
+    .text_im{display: block !important;}   
 }
 
 .lood{
